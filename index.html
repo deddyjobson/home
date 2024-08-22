@@ -6,188 +6,186 @@
     <title>Deddy Jobson - Data Scientist</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
         }
-        h1, h2 {
-            color: #2c3e50;
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 0 20px;
         }
-        .header {
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #cccccc;
+            font-weight: bold;
+        }
+        #showcase {
+            min-height: 400px;
+            background: url('images/profile.jpg') no-repeat center center/cover;
             text-align: center;
-            margin-bottom: 30px;
+            color: #ffffff;
         }
-        .contact-info {
-            text-align: center;
-            margin-bottom: 20px;
+        #showcase .overlay {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 100px 0;
+        }
+        #showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        #showcase p {
+            font-size: 20px;
         }
         .section {
-            margin-bottom: 30px;
+            margin: 20px 0;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        .experience-item {
-            margin-bottom: 20px;
+        .section h2 {
+            color: #35424a;
+            border-bottom: 2px solid #e8491d;
+            padding-bottom: 10px;
         }
         .image-container {
-            float: right;
-            margin: 0 0 20px 20px;
+            text-align: center;
+            margin: 20px 0;
         }
         .image-container img {
-            max-width: 200px;
+            max-width: 100%;
             height: auto;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        .clearfix::after {
-            content: "";
-            clear: both;
-            display: table;
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            color: #ffffff;
+            background-color: #35424a;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Deddy Jobson</h1>
-        <p>Data Scientist</p>
-    </div>
-
-    <div class="contact-info">
-        <p>Tokyo, Japan</p>
-        <p><a href="https://www.linkedin.com/in/deddy-jobson">LinkedIn</a></p>
-        <p><a href="https://github.com/deddyjobson">GitHub</a></p>
-        <p><a href="https://scholar.google.com/citations?user=kwzgoQ0AAAAJ">Google Scholar</a></p>
-    </div>
-
-    <div class="section clearfix">
-        <div class="image-container">
-            <img src="images/profile_pic.jpg" alt="Profile Picture">
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Deddy</span> Jobson</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#research">Research</a></li>
+                </ul>
+            </nav>
         </div>
-        <h2>Professional Journey in Data Science</h2>
-        <p>Since joining Mercari Inc. in Tokyo in January 2021, I have been fortunate to contribute to several 
-        impactful projects that have significantly enhanced our business operations and customer engagement strategies.</p>
-        
-        <p>One of my key achievements was the implementation of advanced statistical models that substantially 
-        improved the ROI of our marketing campaigns, elevating it to over 100%. This breakthrough not only 
-        optimized our marketing spend but also paved the way for more data-driven decision-making in our 
-        promotional activities.</p>
-        
-        <p>In another noteworthy project, I leveraged Bayesian state-space models to quantify the causal impact 
-        of our television commercial campaigns on critical business KPIs. This analysis provided valuable 
-        insights into the effectiveness of our advertising efforts and informed future media planning strategies.</p>
-        
-        <p>Additionally, I developed a set of rule-based metrics to identify active users at risk of churn. 
-        This proactive approach allowed our retention team to implement targeted interventions, thereby 
-        improving overall user retention rates.</p>
-        
-        <p>Throughout my tenure, I have consistently strived to bridge the gap between complex data analysis 
-        and actionable business insights. My role demands a balance of technical expertise, strategic thinking, 
-        and effective communication, as I regularly present findings to senior management and collaborate with 
-        cross-functional teams to drive data-informed decisions.</p>
+    </header>
+
+    <section id="showcase">
+        <div class="overlay">
+            <div class="container">
+                <h1>Deddy Jobson</h1>
+                <p>Data Scientist | Adventurer | Researcher</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>I'm a data scientist with a passion for solving complex problems and exploring the world. With a strong background in machine learning and a love for adventure, I bring a unique perspective to every project I undertake.</p>
+            <p>My goal is to become an expert data scientist capable of independently proposing data-driven solutions that yield a strong business impact. When I'm not crunching numbers, you can find me scaling mountains or exploring the depths of the ocean.</p>
+        </section>
+
+        <section id="experience" class="section">
+            <h2>Professional Experience</h2>
+            <h3>Data Scientist - Mercari Inc.</h3>
+            <p>Jan 2021 – Present | Tokyo, Japan</p>
+            <ul>
+                <li>Led multiple high-impact projects, including the Access Churn campaign and Buyer Quality Model</li>
+                <li>Developed and deployed machine learning models to optimize marketing strategies and improve user retention</li>
+                <li>Collaborated with cross-functional teams to drive data-driven decision-making across the organization</li>
+            </ul>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Skills & Expertise</h2>
+            <ul>
+                <li>Machine Learning: Keras, TensorFlow, CoreML, Python</li>
+                <li>Data Analysis and Visualization</li>
+                <li>Model Development & Deployment: GCP, Kubernetes</li>
+                <li>Big Data Handling and Processing</li>
+                <li>Statistical Analysis and Causal Inference</li>
+            </ul>
+        </section>
+
+        <section id="research" class="section">
+            <h2>Research & Publications</h2>
+            <ul>
+                <li>Strategic Coupon Allocation in Two-sided Marketplaces (2024)</li>
+                <li>LLMs as an Interactive Database Interface for Designing Large Queries (2024)</li>
+                <li>...</li>
+            </ul>
+            <div class="image-container">
+                <img src="images/work_experience.jpg" alt="Research and Publications">
+            </div>
+        </section>
+
+        <section id="interests" class="section">
+            <h2>Beyond Data Science</h2>
+            <p>My passion for exploration extends beyond the realm of data. I'm an avid adventurer, having conquered peaks like Mount Kilimanjaro and Mount Fuji. As a PADI advanced open water license holder, I'm always eager to discover the wonders beneath the waves.</p>
+            <p>When I'm not analyzing data or embarking on adventures, you can find me on the table tennis court or badminton court, honing my skills and enjoying friendly competition.</p>
+        </section>
     </div>
 
-    <div class="section">
-        <h2>Career Objective</h2>
-        <p>To become an expert data scientist capable of independently proposing data-driven solutions that yield a strong business impact.</p>
-    </div>
-
-    <div class="section">
-        <h2>Highlights</h2>
-        <ul>
-            <li>Strong academic background from a premier institute</li>
-            <li>Three years of international work experience in ML/Data Science from India, France and Japan</li>
-            <li>Published papers on causal inference, customer LTV prediction, and fairness in recommendation systems</li>
-            <li>Globetrotter and adventurer with fluency in English, Japanese (N2), and French (basic)</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>Skills and Technical Expertise</h2>
-        <ul>
-            <li>Machine Learning: Proficient in ML tools and techniques like Keras, TensorFlow, CoreML, and Python</li>
-            <li>Data Analysis: Strong analytical skills, capable of identifying patterns, generating insights, and suggesting solutions to improve model performance</li>
-            <li>Model Development & Deployment: Experience in training, deploying, and optimizing ML models in GCP, Kubernetes, and other cloud environments</li>
-            <li>Data Handling: Skilled in handling large datasets, including data cleaning, feature engineering, and data leakage mitigation</li>
-            <li>Model Evaluation: Evaluated model performance using metrics like AUC, CPA, and profit estimations</li>
-            <li>Technical Communication: Effectively communicated updates, insights, and challenges through various collaboration tools</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>Key Projects</h2>
-        <ul>
-            <li>Access Churn Campaign: Implemented a campaign to improve user retention through data analysis and ML model development</li>
-            <li>Buyer Quality Model: Led the deployment of a model to identify high-value customers</li>
-            <li>Coupon Timing Model: Developed a model to optimize coupon distribution timing, increasing user engagement and marketing efficiency</li>
-            <li>User Intent Estimation: Completed a project for deeper understanding of user behavior and improved targeting for personalized recommendations</li>
-            <li>TVCM Modeling: Created a time series model to estimate the impact of TV commercial campaigns, optimizing future strategies</li>
-            <li>GMV Prediction Model: Collaborated to improve the Gross Merchandise Value prediction model, resulting in more accurate forecasts</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>Education</h2>
-        <p>B.Tech (Honors) Electrical Engineering, IIT Madras, Chennai (CGPA 9.35/10) | 2015 – 2019</p>
-    </div>
-
-    <div class="section">
-        <h2>Technologies and Languages</h2>
-        <p><strong>Languages:</strong> Python, SQL</p>
-        <p><strong>Technologies:</strong> Git, Bigquery, Docker, k8s, CircleCI, PyTorch, FastAI, Google Sheets, Google Data Studio</p>
-    </div>
-
-    <div class="section">
-        <h2>Research Publications</h2>
-        <ul>
-            <li>K. Ohashi, S. Sekine, D. Jobson, et al., "Strategic Coupon Allocation for Increasing 
-                Providers' Sales Experiences in Two-sided Marketplaces," arXiv preprint arXiv:2407.14895, 2024.</li>
-            
-            <li>Y. Li and D. Jobson, "LLMs as an Interactive Database Interface for Designing Large Queries," 
-                Proceedings of the 2024 Workshop on Human-In-the-Loop Data Analytics, 2024, pp.1-7.</li>
-            
-            <li>D. Jobson and T. G. Venkatesh, "Dimensionality Reduction Techniques to Aid Parallelization 
-                of Machine Learning Algorithms," 2022 IEEE 7th International conference for Convergence in 
-                Technology (I2CT), 2022, pp. 1-6.</li>
-            
-            <li>J. Yang, Y. Li, and D. Jobson, "Personalized Promotion Decision Making Based on Direct and 
-                Enduring Effect Predictions," arXiv preprint arXiv:2207.14798, 2022.</li>
-            
-            <li>D. Jobson, "Want robust explanations? Get smoother predictions first.," CIKM Workshops, 2022.</li>
-            
-            <li>D. Jobson, "Estimating the Impact of Coupon Non-usage," Joint European Conference on Machine 
-                Learning and Knowledge Discovery in Databases, 2022, pp. 517-523.</li>
-            
-            <li>D. Jobson, "Using Recommendations To Balance Demand and Supply in Two-Sided Marketplaces," 
-                Workshop on Recommendation Ecosystems: Modeling, Optimization and Incentive Design, 2024.</li>
-            
-            <li>D. Jobson, Y. Li, N. Nishimura, et al., "Covariate Ordered Systematic Sampling as an 
-                Improvement to Randomized Controlled Trials," arXiv preprint arXiv:2404.10381, 2024.</li>
-            
-            <li>D. Jobson and E. Hudson, "Generalized Regression with Conditional GANs," 
-                arXiv preprint arXiv:2404.13500, 2024.</li>
-            
-            <li>Y. Uehara, N. Nishimura, Y. Li, et al., "Robust portfolio optimization model for electronic 
-                coupon allocation," INFOR: Information Systems and Operational Research, 2024, pp. 1-15.</li>
-            
-            <li>D. Jobson and Y. Li, "Investigating the Potential of Using Large Language Models for Scheduling," 
-                Proceedings of the 1st ACM International Conference on AI-Powered Software, 2024, pp. 170-171.</li>
-            
-            <li>Y. Uehara, S. Ikeda, N. Nishimura, et al., "Fast solution to the fair ranking problem using 
-                the Sinkhorn algorithm," arXiv preprint arXiv:2406.10262, 2024.</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>Interests</h2>
-        <h3>Adventure</h3>
-        <ul>
-            <li>Climbed Mount Kilimanjaro, Mount Fuji, etc.</li>
-            <li>Extensively trekked in the Amazon, Reunion Island and many more places around the world.</li>
-            <li>Currently a PADI advanced open water license holder.</li>
-        </ul>
-        <h3>Sports</h3>
-        <p>Table tennis, badminton, etc.</p>
-    </div>
+    <footer>
+        <p>&copy; 2023 Deddy Jobson. Connect with me on 
+            <a href="https://www.linkedin.com/in/deddy-jobson">LinkedIn</a> | 
+            <a href="https://github.com/deddyjobson">GitHub</a> | 
+            <a href="https://scholar.google.com/citations?user=kwzgoQ0AAAAJ">Google Scholar</a>
+        </p>
+    </footer>
 </body>
 </html>
