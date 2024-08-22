@@ -31,14 +31,19 @@
             margin-bottom: 20px;
         }
         .image-container {
-            margin: 20px 0;
-            text-align: center;
+            float: right;
+            margin: 0 0 20px 20px;
         }
         .image-container img {
-            max-width: 100%;
+            max-width: 200px;
             height: auto;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
         }
     </style>
 </head>
@@ -55,13 +60,36 @@
         <p><a href="https://scholar.google.com/citations?user=kwzgoQ0AAAAJ">Google Scholar</a></p>
     </div>
 
+    <div class="section clearfix">
+        <div class="image-container">
+            <img src="images/profile_pic.jpg" alt="Profile Picture">
+        </div>
+        <h2>Professional Journey in Data Science</h2>
+        <p>Since joining Mercari Inc. in Tokyo in January 2021, I have been fortunate to contribute to several 
+        impactful projects that have significantly enhanced our business operations and customer engagement strategies.</p>
+        
+        <p>One of my key achievements was the implementation of advanced statistical models that substantially 
+        improved the ROI of our marketing campaigns, elevating it to over 100%. This breakthrough not only 
+        optimized our marketing spend but also paved the way for more data-driven decision-making in our 
+        promotional activities.</p>
+        
+        <p>In another noteworthy project, I leveraged Bayesian state-space models to quantify the causal impact 
+        of our television commercial campaigns on critical business KPIs. This analysis provided valuable 
+        insights into the effectiveness of our advertising efforts and informed future media planning strategies.</p>
+        
+        <p>Additionally, I developed a set of rule-based metrics to identify active users at risk of churn. 
+        This proactive approach allowed our retention team to implement targeted interventions, thereby 
+        improving overall user retention rates.</p>
+        
+        <p>Throughout my tenure, I have consistently strived to bridge the gap between complex data analysis 
+        and actionable business insights. My role demands a balance of technical expertise, strategic thinking, 
+        and effective communication, as I regularly present findings to senior management and collaborate with 
+        cross-functional teams to drive data-informed decisions.</p>
+    </div>
+
     <div class="section">
         <h2>Career Objective</h2>
         <p>To become an expert data scientist capable of independently proposing data-driven solutions that yield a strong business impact.</p>
-    </div>
-
-    <div class="image-container">
-        <img src="images/profile_pic.jpg" alt="Profile Picture">
     </div>
 
     <div class="section">
@@ -73,20 +101,6 @@
             <li>Globetrotter and adventurer with fluency in English, Japanese (N2), and French (basic)</li>
         </ul>
     </div>
-
-    <div class="section">
-        <h2>Work Experience</h2>
-        <div class="experience-item">
-            <h3>Data Scientist - Mercari Inc.</h3>
-            <p>Jan 2021 – Present | Tokyo, Japan</p>
-            <ul>
-                <li>Used statistical models to raise the ROI of marketing campaigns to more than 100%, making it financially feasible.</li>
-                <li>Deployed Bayesian state-space models to estimate the causal effect of a TV commercial campaign on business KPIs.</li>
-                <li>Defined rule-based metrics to segment active users who are likely to churn.</li>
-            </ul>
-        </div>
-    </div>
-
 
     <div class="section">
         <h2>Skills and Technical Expertise</h2>
@@ -162,11 +176,6 @@
             <li>Y. Uehara, S. Ikeda, N. Nishimura, et al., "Fast solution to the fair ranking problem using 
                 the Sinkhorn algorithm," arXiv preprint arXiv:2406.10262, 2024.</li>
         </ul>
-    </div>
-
-
-    <div class="image-container">
-        <img src="images/work_experience.jpg" alt="Research and Publications">
     </div>
 
     <div class="section">
